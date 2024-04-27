@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TabMerge</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        <div class="heading">
+          <h1 class="main-title boujee-text">Tab Merge</h1>
+        </div>
+
+        <div class="sub-section">
+          <div>
+            <input
+              type="text"
+              id="domain"
+              class="input-form-domain"
+              placeholder="Domain (example.com)"
+            />
+            <input
+              type="text"
+              id="groupTitle"
+              class="input-form-title"
+              placeholder="Group Title"
+            />
+          </div>
+          <button
+            style="
+              cursor: pointer;
+              padding: 8px 16px;
+              color: black;
+              text-align: center;
+              background-color: #ededed;
+              border-radius: 6px;
+            "
+            id="submit"
+          >
+            Submit
+          </button>
+
+          <div id="error-message-container" style="opacity: 0">
+            <p
+              id="error-message"
+              style="margin: 0; padding-left: 2px; color: crimson"
+            >
+              Invalid domain. Please double-check and try again.
+            </p>
+          </div>
+
+          <ul id="domainsList"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
